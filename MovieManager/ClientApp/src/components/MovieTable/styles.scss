@@ -1,0 +1,28 @@
+.Table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+    .MuiPaper-root {
+        box-shadow: 0px 0px 13px 3px #0000000f;
+    }
+
+    tbody .MuiTableRow-root {
+        cursor: pointer;
+
+        transition: background-color 100ms ease-in-out;
+        &:hover {
+            background-color: rgba(#007bff, 0.2);
+        }
+
+        &:last-child:hover {
+            background-color: initial;
+        }
+    }
+
+    .MuiChip-root {
+        margin-right: 5px;
+    }
+}
